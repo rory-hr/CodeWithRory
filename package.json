@@ -1,0 +1,11 @@
+{
+  "name": "codewithrory",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "rory-roccio",
+  "license": "ISC"
+}
