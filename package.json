@@ -10,13 +10,15 @@
   "author": "rory-roccio",
   "license": "ISC",
   "dependencies": {
+    "@material-ui/core": "^4.10.2",
+    "@material-ui/icons": "^4.9.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
     "redux": "^4.0.5",
-    "styled-components": "^5.1.1",
+    "styled-components": "^5.1.1"
   },
   "devDependencies": {
     "webpack": "^4.43.0",
@@ -25,6 +27,6 @@
     "@babel/preset-env": "^7.10.2",
     "@babel/preset-react": "^7.10.1",
     "babel-loader": "^8.1.0",
-    "babel-plugin-styled-components": "^1.10.7",
+    "babel-plugin-styled-components": "^1.10.7"
   }
 }
