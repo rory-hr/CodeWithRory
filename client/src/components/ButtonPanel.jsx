@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useSelector, useDispatch } from 'react-redux';
 
 const Container = styled.div`
   display: flex;
@@ -27,9 +28,18 @@ const Button = styled.button`
 `;
 
 export default () => {
+
+  const showPortfolio = useSelector(state => state.showPortfolio);
+  const dispatch = useDispatch();
+
+  const togglePortfolio = (e) => {
+    dispatch({ type: `${showPortfolio ? 'OFF' : 'ON'}` });
+  };
+
+
   return (
     <Container>
-      <Button type='portfolio'>PORTFOLIO</Button>
+      <Button type='portfolio' onClick={togglePortfolio}>PORTFOLIO</Button>
       <Button>CONTACT</Button>
     </Container>
   );
