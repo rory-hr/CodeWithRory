@@ -4,11 +4,15 @@ import ButtonPanel from './ButtonPanel';
 
 const Container = styled.div`
   display: inline-block;
+  position: relative;
   max-width: 200px;
   width: 100%;
   height: 300px;
   margin: 0 10px 0 10px;
   overflow: hidden;
+  @media (max-width: 444px) {
+    bottom: 200px;
+  }
 `;
 
 const Text1 = styled.p`
