@@ -11,11 +11,14 @@ const Container = styled.span`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-left: 10px;
 `;
 
 const Header = styled.p`
   color: black;
   font-family: 'Indie Flower', cursive;
+  margin-right: 5px;
+  font-size: 20px;
 `;
 
 
@@ -23,7 +26,7 @@ const Header = styled.p`
 export default () => {
   return (
     <Container>
-      <Header>Rory</Header>
+      <Header>Code with Rory</Header>
       <IconButton aria-label="github.com" onClick={() => window.open('https://www.github.com/rory-roccio')}>
         <GitHubIcon fontSize="small" />
       </IconButton>
