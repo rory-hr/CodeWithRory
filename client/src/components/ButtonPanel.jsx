@@ -29,18 +29,22 @@ const Button = styled.button`
 
 export default () => {
 
-  const showPortfolio = useSelector(state => state.showPortfolio);
+  // const showPortfolio = useSelector(state => state.showPortfolio);
   const dispatch = useDispatch();
 
   const togglePortfolio = (e) => {
-    dispatch({ type: `${showPortfolio ? 'OFF' : 'ON'}` });
+    dispatch({ type: 'ON' });
+  };
+
+  const toggleContact = (e) => {
+    dispatch({ type: 'OFF' });
   };
 
 
   return (
     <Container>
       <Button type='portfolio' onClick={togglePortfolio}>PORTFOLIO</Button>
-      <Button>CONTACT</Button>
+      <Button onClick={toggleContact}>CONTACT</Button>
     </Container>
   );
 };
