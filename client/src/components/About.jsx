@@ -10,7 +10,7 @@ const Container = styled.div`
   height: 300px;
   margin: 0 10px 0 10px;
   overflow: hidden;
-  @media (max-width: 444px) {
+  @media (max-width: 434px) {
     bottom: 200px;
   }
 `;
