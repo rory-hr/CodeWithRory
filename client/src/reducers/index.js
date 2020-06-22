@@ -1,12 +1,6 @@
 import { combineReducers } from 'redux';
-
-const test = (state = 'TEST', { type, payload }) => {
-  switch (type) {
-    default:
-      return state;
-  }
-};
+import showPortfolio from './showPortfolio';
 
 export default combineReducers({
-  test
+  showPortfolio
 });
