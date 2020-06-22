@@ -15,6 +15,7 @@ const Container = styled.span`
 
 const Header = styled.p`
   color: black;
+  font-family: 'Indie Flower', cursive;
 `;
 
 
@@ -27,7 +28,7 @@ export default () => {
         <GitHubIcon fontSize="small" />
       </IconButton>
       <IconButton aria-label="linkedin.com" onClick={() => window.open('https://www.Linkedin.com/in/rory-roccio')}>
-        <LinkedInIcon fontSize="medium" />
+        <LinkedInIcon fontSize="default" />
       </IconButton>
     </Container>
   );
