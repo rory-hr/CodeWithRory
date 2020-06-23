@@ -7,7 +7,7 @@ const Container = styled.div`
 const Image = styled.img`
   border-radius: 8px;
   height: 300px;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 0;
 `;
 
 export default () => {
