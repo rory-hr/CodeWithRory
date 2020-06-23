@@ -5,17 +5,27 @@ import IconButton from '@material-ui/core/IconButton';
 
 const Container = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
   margin-block-start: 5px;
   margin-block-end: 5px;
-  border-radius: 3px;
-  background-color: #fcfcfc;
   padding: 3px 3px 3px 10px;
   font-family: 'Roboto', sans-serif;
   :hover {
     box-shadow:0px 0px 5px #c7c7c7;
   }
+`;
+
+const Column1 = styled.div`
+  display: flex;
+  width: 120px;
+
+`;
+
+const Column2 = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 `;
 
 const Title = styled.h4`
@@ -54,19 +64,30 @@ const Tech = styled.h5`
   margin: 0 0 0 0;
 `;
 
+const Gif = styled.img`
+  max-height: 100px;
+  max-width: 100%;
+  margin: auto;
+`;
+
 export default ({ project }) => {
   return (
     <Container>
-      <Title>
-        {project.title}
-        <IconButton size={'small'} disableRipple={true} disableFocusRipple={true} aria-label="github.com" onClick={() => window.open(project.repo)}>
-          <GitHubIcon fontSize="small" />
-        </IconButton>
-      </Title>
-      <Description>{project.description}</Description>
-      <TechStack>
-      { project.stack.map((tech, i) => <Pill key={i}><Tech>{tech}</Tech></Pill>) }
-      </TechStack>
+      { !project.img ? null : <Column1>
+        <Gif src={project.img}/>
+      </Column1>}
+      <Column2>
+        <Title>
+          {project.title}
+          <IconButton size={'small'} disableRipple={true} disableFocusRipple={true} aria-label="github.com" onClick={() => window.open(project.repo)}>
+            <GitHubIcon fontSize="small" />
+          </IconButton>
+        </Title>
+        <Description>{project.description}</Description>
+        <TechStack>
+        { project.stack.map((tech, i) => <Pill key={i}><Tech>{tech}</Tech></Pill>) }
+        </TechStack>
+      </Column2>
     </Container>
   );
 };
