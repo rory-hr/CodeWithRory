@@ -4,7 +4,8 @@ import NavBar from './NavBar';
 import Main from './Main';
 
 const Container = styled.div`
-  
+  max-width: 100vw;
+  overflow: hidden;
 `;
 
 export default () => {
