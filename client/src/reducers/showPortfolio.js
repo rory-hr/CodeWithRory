@@ -5,6 +5,6 @@ export default (state = true, { type }) => {
     case 'OFF':
       return false;
     default: 
-      return !state;
+      return state;
   }
 };
