@@ -2,3 +2,4 @@ node_modules
 client/dist/app.js.map
 client/dist/app.js
 .env
+client/dist/rory.jpg
