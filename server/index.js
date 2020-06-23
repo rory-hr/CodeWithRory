@@ -6,7 +6,7 @@ const app = express();
 
 const { PORT } = process.env;
 
-app.use('/', express.static(path.join(__dirname, 'client/dist')));
+app.use('/', express.static(path.join(__dirname, '../client/dist')));
 
 app.listen(PORT, (err) => {
   if (err) {
