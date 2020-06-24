@@ -29,6 +29,7 @@ const Column2 = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-left: 8px;
 `;
 
 const Title = styled.h4`
@@ -53,10 +54,10 @@ const Pill = styled.div`
   height: 25px;
   min-width: 40px;
   background-color: #5f95bb;
-  padding: 0 8px 0 8px;
+  padding: 0 8px 2px 8px;
   color: white;
   margin: 0 4px 2px 0;
-  border-radius: 20px;
+  border-radius: 23px;
   text-align: center;
   font-size: 1em;
   align-items: center;
@@ -69,7 +70,7 @@ const Tech = styled.h5`
 
 const Gif = styled.img`
   max-height: 100px;
-  max-width: 100%;
+  max-width: 90%;
   margin: auto;
 `;
 
