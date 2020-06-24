@@ -15,6 +15,7 @@ const Container = styled.main`
 
 const HeaderSection = styled.span`
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;

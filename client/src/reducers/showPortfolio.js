@@ -1,4 +1,4 @@
-export default (state = true, { type }) => {
+export default (state = false, { type }) => {
   switch (type) {
     case 'ON':
       return true;
