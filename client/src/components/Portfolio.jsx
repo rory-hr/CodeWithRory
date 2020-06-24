@@ -37,7 +37,7 @@ const projects = [
   {
     title: 'No-Cap',
     repo: 'https://github.com/no-cap/popular-dishes-service',
-    img: null,
+    img: 'SDC.png',
     stack: ['React', 'Node', 'Express', 'Mongo', 'Postgres'],
     description: 'Back end scaling and optimization project for a restaurant reviews micro-service.',
     link: null,
