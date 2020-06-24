@@ -17,11 +17,9 @@ const Container = styled.span`
 const Header = styled.p`
   color: black;
   font-family: 'Indie Flower', cursive;
-  margin-right: 5px;
-  font-size: 20px;
+  font-size: 2em;
+  margin: 20px 10px 20px 0;
 `;
-
-
 
 export default () => {
   return (
