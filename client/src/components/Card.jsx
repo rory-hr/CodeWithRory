@@ -7,10 +7,14 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin-block-start: 5px;
-  margin-block-end: 5px;
-  padding: 3px 3px 3px 10px;
+  margin-block-start: 20px;
+  margin-block-end: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 8px 8px 8px 15px;
   font-family: 'Roboto', sans-serif;
+  transition-property: all;
+  transition-duration: 0.3s;
   :hover {
     box-shadow:0px 0px 5px #c7c7c7;
   }
@@ -18,8 +22,7 @@ const Container = styled.div`
 
 const Column1 = styled.div`
   display: flex;
-  width: 120px;
-
+  width: 150px;
 `;
 
 const Column2 = styled.div`
@@ -30,12 +33,12 @@ const Column2 = styled.div`
 
 const Title = styled.h4`
   margin: 0 0 0 0;
+  font-size: 1.5em;
 `;
 
 const Description = styled.p`
-  margin: 0 0 0 0;
-  font-size: 14px;
-
+  margin: 5px 0 5px 0;
+  font-size: 1em;
 `;
 
 const TechStack = styled.span`
@@ -47,15 +50,15 @@ const TechStack = styled.span`
 
 const Pill = styled.div`
   display: flex;
-  height: 20px;
+  height: 25px;
   min-width: 40px;
   background-color: #5f95bb;
-  padding: 0 4px 0 4px;
+  padding: 0 8px 0 8px;
   color: white;
   margin: 0 4px 2px 0;
   border-radius: 20px;
   text-align: center;
-  font-size: 12px;
+  font-size: 1em;
   align-items: center;
   justify-content: center;
 `;
