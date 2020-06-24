@@ -1,18 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 import Card from './Card';
-import ReactCSSTransitionGroup from 'react-transition-group';
 
 const Container = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 425px;
+  max-width: 760px;
   width: 100%;
-  right: 5px;
-  margin: 0 5px 0 5px;
-  @media (max-width: 434px) {
-    bottom: 200px;
+  right: 20px;
+  margin: auto;
+  @media only screen and (max-width: 863px) {
+    bottom: 497px;
+    max-width: 500px;
   }
 `;
 
